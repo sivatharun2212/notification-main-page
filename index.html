@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Notifications page</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- header -->
+    <header class="header">
+      <div class="notif-count">
+        <h4>notifications</h4>
+        <div class="count">3</div>
+      </div>
+      <a class="mark-btn" href="#">Mark all as read</a>
+    </header>
+
+    <div class="notification notif-bgc">
+      <div class="image"><img src="./assets/images/avatar-mark-webber.webp" alt=""></div>
+      <div class="notificatin-content">
+        <div class="notification-info">
+          <h5 class="notif-name">mark webber</h5>
+          <span class="notif-title">reacted to your recent post</span>
+          <h5 class="notif-link">My first tournament today!</h5>
+          <div class="red-dot"></div>
+        </div>
+        <div class="time">1m ago</div>
+      </div>
+    </div>
+
+    <div class="notification notif-bgc">
+      <div class="image"><img src="./assets/images/avatar-angela-gray.webp" alt=""></div>
+      <div class="notificatin-content">
+        <div class="notification-info">
+          <h5 class="notif-name">angela gray</h5>
+          <span class="notif-title">followed you</span>
+          <div class="red-dot"></div>
+        </div>
+        <div class="time">5m ago</div>
+      </div>
+    </div>
+
+    <div class="notification notif-bgc">
+      <div class="image"><img src="./assets/images/avatar-jacob-thompson.webp" alt=""></div>
+      <div class="notificatin-content">
+        <div class="notification-info">
+          <h5 class="notif-name">jacob thompson</h5>
+          <span class="notif-title">has joined your group</span>
+          <h5 class="notif-link">chess club</h5>
+          <div class="red-dot"></div>
+        </div>
+        <div class="time">1 day ago</div>
+      </div>
+    </div>
+
+    <div class="with-message">
+      <div class="notification">
+        <div class="image"><img src="./assets/images/avatar-rizky-hasanuddin.webp" alt=""></div>
+        <div class="notificatin-content">
+          <div class="notification-info">
+            <h5 class="notif-name">rizky hasanuddin</h5>
+            <span class="notif-title">sent you a private message</span>
+          </div>
+          <div class="time">5 days ago</div>
+        </div>
+      </div>
+      <div class="message">
+        <p>Hello, thanks for setting up the Chess Club. I've
+          been a member for a few weeks now and i'm already 
+          having lots of fun and improving my game.
+        </p>
+      </div>
+    </div>
+
+    <div class="notification">
+      <div class="image"><img src="./assets/images/avatar-kimberly-smith.webp" alt=""></div>
+      <div class="notificatin-content">
+        <div class="notification-info">
+          <h5 class="notif-name">kimberly smith</h5>
+          <span class="notif-title">commented on your picture</span>
+        </div>
+        <div class="time">1 week ago</div>
+      </div>
+      <div class="image-msg"></div>
+    </div>
+
+    <div class="notification">
+      <div class="image"><img src="./assets/images/avatar-nathan-peterson.webp" alt=""></div>
+      <div class="notificatin-content">
+        <div class="notification-info notification-info-wrap">
+          <h5 class="notif-name">nathan peterson</h5>
+          <span class="notif-title">reacted to your recent post</span>
+          <h5 class="notif-link">5 end-game strategies to increase
+            your win rate
+          </h5>
+        </div>
+        <div class="time">2 weeks ago</div>
+      </div>
+    </div>
+
+    <div class="notification">
+      <div class="image"><img src="./assets/images/avatar-anna-kim.webp" alt=""></div>
+      <div class="notificatin-content">
+        <div class="notification-info">
+          <h5 class="notif-name">anna kim</h5>
+          <span class="notif-title">left the group</span>
+          <h5 class="notif-link">chess club</h5>
+        </div>
+        <div class="time">2 weeks ago</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

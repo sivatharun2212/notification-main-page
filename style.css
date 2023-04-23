@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+
+:root {
+    /* primary */
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+
+    --font-family: 'Plus Jakarta Sans',sans-serif;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Very-light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 45%;
+    background-color: var(--White);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notif-count {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.notif-count h4 {
+    font-size: 20px;
+    color: var(--Very-dark-blue);
+    text-transform: capitalize;
+
+}
+
+.count {
+    background-color: var(--Very-dark-blue);
+    width: 25px;
+    height: 25px;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+
+}
+
+.header a {
+    color: var(--Dark-grayish-blue);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    
+}
+
+.notification {
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+    padding: 10px;
+
+}
+
+.notif-bgc {
+    background-color: var(--Light-grayish-blue-1);
+
+}
+
+.image img{
+    width: 30px;
+    cursor: pointer;
+
+}
+
+.notificatin-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.notification-info {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    align-items: center;
+}
+
+.notification-info h5 {
+    font-size: 13px;
+    text-transform: capitalize;
+    cursor: pointer;
+
+}
+
+.notif-name {
+    color: var(--Very-dark-blue);
+    font-weight: 600;
+}
+
+.notif-title {
+    font-size: 13px;
+    color: var(--Grayish-blue);
+}
+
+.notif-link {
+    color: var(--Dark-grayish-blue);
+    font-weight: bold;
+}
+
+.red-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--Red);
+    border-radius: 50%;
+}
+
+.time {
+    font-size: 13px;
+    color: var(--Grayish-blue);
+}
+
+
+.with-message {
+    display: flex;
+    flex-direction: column;
+}
+.message {
+    width: 80%;
+    margin: 0px 60px;
+    padding: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid var(--Light-grayish-blue-2);
+}
+
+.message p {
+    font-size: 13px;
+}
+
+.header a:hover{
+    color: var(--Very-dark-blue);
+}
+
+.notif-name:hover{
+    color: var(--Blue);
+}
+
+.notif-link:hover{
+    color: var(--Blue);
+}
+
+.message:hover{
+    background-color: var(--Light-grayish-blue-1);
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .container {
+        width: 75%;
+    }
+}
